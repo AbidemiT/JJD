@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+body {
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+header{
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c); 
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding-top: 40px;
+}
+
+.logo {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+svg {
+  margin-left: 65%;
+  font-size: 0.5rem;
+}
+
+.cancel {
+  display: none;
+}
+
+main h1,h3 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c); 
+  padding: 80px 30px;
+  margin: -1px auto;
+  height: 45vh;
+  /* text-align: center; */
+}
+
+main h3 {
+  margin-top: 90px;
+}
+
+.tour {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 900;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid rgb(250, 246, 246);
+  background-color: #fc6767;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.tour:hover {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 900;
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid rgb(250, 246, 246);
+  background-color: rgba(53, 49, 49, 0.267);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 80px;
+  right: 0;
+}
+
+.menu {
+  display:none;
+  list-style-type: none;
+  background-color: #020202b4;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu li a {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.menu li a:hover {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #fc6767;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section {
+  color:  rgb(29, 26, 26);
+  padding: 20px;
+}
+
+section h1 {
+  color: rgb(15, 15, 15);
+}
+
+#hotels {
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  color: #fff;
+}
+
+#hotels h1 {
+  color: #fff;
+}
+#hotels p {
+  margin-bottom: 25px;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  grid-gap: 8px;
+}
+
+.cards {
+  margin: 0 auto;
+  width:320px;
+  height:300px;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  position: absolute;
+  color: white;
+  bottom: 68%;
+  margin-left: 10px;
+}
+.caption h3 {
+  background-color: #fc6767;
+  padding: 10px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+}
+
+.caption-1 {
+  position: absolute;
+  color: white;
+  bottom: 34%;
+  margin-left: 10px;
+}
+
+.caption-1 h3 {
+  background-color: #fc6767;
+  padding: 10px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+}
+
+.caption-2 {
+  position: absolute;
+  color: white;
+  bottom: 1%;
+  margin-left: 10px;
+}
+
+.caption-2 h3 {
+  background-color: #fc6767;
+  padding: 10px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+}
+
+/*
+ * Media queries
+*/
+
+@media only screen and (min-width: 768px) {
+  .cancel, .burger {
+    display: none;
+    cursor: pointer;
+  }
+
+  header{
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); 
+    width: 100%;
+  }
+
+  #nav-menu {
+   background-color: transparent;
+    width: 60%;
+    display: flex;
+    color: #fff;
+  }
+
+  .menu {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .menu li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  .menu li a:hover {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #fc6767;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #paragraph {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+  }
+
+  #card {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    padding: 0 20px;
+  }
+
+  .cards {
+    margin: 0 auto;
+    width:370px;
+    height:300px;
+  }
+} 
