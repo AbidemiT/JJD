@@ -10,7 +10,6 @@ body {
 }
 
 body {
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 
@@ -22,10 +21,6 @@ header {
     #ec008c
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fc6767, #ec008c);
-  /* width: 100%;
-  display: flex;
-  padding: 30px 15px;
-  margin: 0 auto; */
 }
 
 .logo {
@@ -60,7 +55,6 @@ main {
   padding: 80px 30px;
   margin: -1px auto;
   height: 45vh;
-  /* text-align: center; */
 }
 
 main h3 {
@@ -72,24 +66,11 @@ main h3 {
   display: inline-block;
   font-weight: 900;
   margin-top: 30px;
-  padding: 10px 30px;
+  padding: 10px 50px;
   border: 2px solid rgb(250, 246, 246);
   background-color: #fc6767;
   border-radius: 20px;
   color: white;
-  cursor: pointer;
-}
-.tour:hover {
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 900;
-  margin-top: 30px;
-  padding: 10px 30px;
-  border: 2px solid rgb(250, 246, 246);
-  background-color: rgba(53, 49, 49, 0.267);
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
 }
 
 nav {
@@ -144,6 +125,25 @@ section {
 section h1 {
   color: rgb(15, 15, 15);
 }
+
+#container {
+  margin: 0 auto;
+}
+
+  #about #container .row{
+   display: grid;
+   /* grid-gap: 20px; */
+  }
+  #about #container .col{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 15px;
+  }
+
+  .col img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
 #hotels {
   background: #ec008c; /* fallback for old browsers */
@@ -230,126 +230,99 @@ section h1 {
  * Media queries
 */
 
-@media only screen and (min-width: 768px) {
-  .cancel,
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-
-  header {
-    background: #ec008c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #fc6767,
-      #ec008c
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c);
-  }
-  .logo {
-    width: 10%;
-  }
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+.burger {
+  display: none;
+}
 
   nav {
-    width: 100vw;
-    color: #fff;
-    padding: 10px;
+    padding: 30px;
+  }
+
+  .logo {
+    margin-left: 20px;
   }
 
   ul {
     display: flex;
     list-style-type: none;
-    padding: 10px;
-    color: #fff;
-    width: 40%;
-    margin-left: auto;
+    margin-left: 40%;
+    margin-top: 7px;
   }
-
+  
   ul li a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: none;
   }
+
   ul li a:hover {
-    padding: 10px;
-    text-decoration: none;
-    background-color: #fc6767;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
   }
 
-  main {
-    background: #ec008c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #fc6767,
-      #ec008c
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c);
-    height: 45vh;
-    text-transform: uppercase;
-  }
-  
   main h1 {
-    font-size: 2.5rem
+    text-transform: uppercase;
+    font-size: 2.4rem;
   }
-  main h3 {
-    margin-top: 90px;
-  }
-  
-  .tour {
+
+  main a {
     position: absolute;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 900;
-    margin-top: 30px;
-    padding: 10px 30px;
-    border: 2px solid rgb(250, 246, 246);
-    background-color: #fc6767;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
-    bottom: 85px;
-    /* right: 43.5vw; */
-  }
-  .tour:hover {
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 900;
-    margin-top: 30px;
-    padding: 10px 30px;
-    border: 2px solid rgb(250, 246, 246);
-    background-color: rgba(53, 49, 49, 0.267);
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
+    bottom: 90px;
+    left: 41%;
   }
 
-  #about {
-    height: 100vh;
+#container {
+  padding: 40px;
+}
+
+  #about #container .row{
+   display: grid;
+   grid-gap: 20px;
+  }
+  #about #container .col{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 5px;
   }
 
-  #paragraph {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
+  .col img {
+    width: 400px;
   }
 
-  #card {
+  .img-left {
+    margin-left: 27%;
+  }
+
+  #hotels {
+    padding: 20px 40px;
+  }
+
+  #hotels #card {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    padding: 0 20px;
   }
 
   .cards {
     margin: 0 auto;
-    width: 370px;
+    width: 350px;
     height: 300px;
   }
+
+  .caption {
+    position: absolute;
+    color: white;
+    top: 194px;
+    margin-left: 10px;
+  }
+  .caption-1 {
+    position: absolute;
+    color: white;
+    top: 194px;
+    margin-left: 10px;
+  }
 }
+    
