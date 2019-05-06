@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html,body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-size: 1em;
@@ -13,24 +14,28 @@ body {
   color: #fff;
 }
 
-header{
-  background: #ec008c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fc6767, #ec008c); 
-  width: 100%;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  padding-top: 40px;
+header {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  /* width: 100%;
+  display: flex;
+  padding: 30px 15px;
+  margin: 0 auto; */
 }
 
 .logo {
-  margin-top: 5px;
+  padding-top: 8px;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 svg {
-  margin-left: 65%;
+  margin-left: 60%;
   font-size: 0.5rem;
 }
 
@@ -38,15 +43,20 @@ svg {
   display: none;
 }
 
-main h1,h3 {
+main h1,
+h3 {
   margin: 0;
   padding: 0;
 }
 
 main {
-  background: #ec008c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fc6767, #ec008c); 
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c);
   padding: 80px 30px;
   margin: -1px auto;
   height: 45vh;
@@ -83,33 +93,42 @@ main h3 {
 }
 
 nav {
-  position: absolute;
-  width: 100%;
-  margin: 0 auto;
-  top: 80px;
-  right: 0;
+  display: flex;
+  padding: 30px;
+}
+
+ul {
+  display: none;
+  margin: 0;
 }
 
 .menu {
-  display:none;
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
   list-style-type: none;
-  background-color: #020202b4;
-  padding: 10px;
+  background: #020202b4;
+  padding: 20px;
   color: #fff;
 }
 
-.menu li a {
+ul li a {
   text-align: center;
+  text-transform: uppercase;
   display: block;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   color: white;
   cursor: pointer;
   margin: 0 auto;
 }
-.menu li a:hover {
+ul li a:hover {
   display: block;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
   background-color: #fc6767;
   color: white;
@@ -118,7 +137,7 @@ nav {
 }
 
 section {
-  color:  rgb(29, 26, 26);
+  color: rgb(29, 26, 26);
   padding: 20px;
 }
 
@@ -127,8 +146,12 @@ section h1 {
 }
 
 #hotels {
-  background: #ec008c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc6767,
+    #ec008c
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fc6767, #ec008c);
   color: #fff;
 }
@@ -149,8 +172,8 @@ section h1 {
 
 .cards {
   margin: 0 auto;
-  width:320px;
-  height:300px;
+  width: 320px;
+  height: 300px;
 }
 
 .cards img {
@@ -208,33 +231,41 @@ section h1 {
 */
 
 @media only screen and (min-width: 768px) {
-  .cancel, .burger {
+  .cancel,
+  .burger {
     display: none;
     cursor: pointer;
   }
 
-  header{
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); 
-    width: 100%;
+  header {
+    background: #ec008c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #fc6767,
+      #ec008c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c);
+  }
+  .logo {
+    width: 10%;
   }
 
-  #nav-menu {
-   background-color: transparent;
-    width: 60%;
-    display: flex;
+  nav {
+    width: 100vw;
     color: #fff;
+    padding: 10px;
   }
 
-  .menu {
+  ul {
     display: flex;
     list-style-type: none;
     padding: 10px;
     color: #fff;
+    width: 40%;
+    margin-left: auto;
   }
-  
-  .menu li a {
+
+  ul li a {
     display: block;
     text-align: center;
     padding: 10px;
@@ -243,7 +274,7 @@ section h1 {
     cursor: pointer;
     margin: 0 auto;
   }
-  .menu li a:hover {
+  ul li a:hover {
     padding: 10px;
     text-decoration: none;
     background-color: #fc6767;
@@ -252,26 +283,73 @@ section h1 {
     border-radius: 5px;
   }
 
+  main {
+    background: #ec008c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #fc6767,
+      #ec008c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c);
+    height: 45vh;
+    text-transform: uppercase;
+  }
+  
+  main h1 {
+    font-size: 2.5rem
+  }
+  main h3 {
+    margin-top: 90px;
+  }
+  
+  .tour {
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid rgb(250, 246, 246);
+    background-color: #fc6767;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    bottom: 85px;
+    /* right: 43.5vw; */
+  }
+  .tour:hover {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border: 2px solid rgb(250, 246, 246);
+    background-color: rgba(53, 49, 49, 0.267);
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
   #about {
     height: 100vh;
   }
 
   #paragraph {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
 
   #card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     padding: 0 20px;
   }
 
   .cards {
     margin: 0 auto;
-    width:370px;
-    height:300px;
+    width: 370px;
+    height: 300px;
   }
-} 
+}
