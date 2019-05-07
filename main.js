@@ -1,6 +1,7 @@
+// Menu functionality
+
 (function () {
-    let menu = document.querySelector("ul");
-    
+    let menu = document.querySelector("ul");  
     let burger = document.querySelector(".burger");
     
     burger.addEventListener("click", (e) => {

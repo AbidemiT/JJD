@@ -13,6 +13,11 @@ body {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 header {
   background: #ec008c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -90,7 +95,7 @@ ul {
   top: 0;
   left: 0;
   margin: 0;
-  height: 100%;
+  height: auto;
   list-style-type: none;
   background: #020202b4;
   padding: 20px;
@@ -130,20 +135,20 @@ section h1 {
   margin: 0 auto;
 }
 
-  #about #container .row{
-   display: grid;
-   /* grid-gap: 20px; */
-  }
-  #about #container .col{
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-gap: 15px;
-  }
+#about #container .row {
+  display: grid;
+  /* grid-gap: 20px; */
+}
+#about #container .col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
 
-  .col img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.col img {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 #hotels {
   background: #ec008c; /* fallback for old browsers */
@@ -227,14 +232,106 @@ section h1 {
 }
 
 /*
- * Media queries
+ * Media queries starts here
 */
+@media (min-width: 1281px) {
+  
+  .burger {
+    display: none;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 45%;
+    margin-top: 7px;
+  }
+
+  ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: none;
+  }
+
+  ul li a:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  main h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+
+  main a {
+    position: absolute;
+    bottom: 75px;
+    left: 41%;
+  }
+
+  #container {
+    padding: 40px;
+  }
+
+  #about #container .row {
+    display: grid;
+    grid-gap: 20px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  #about #container .col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col img {
+    width: 400px;
+  }
+
+  #hotels {
+    padding: 20px 40px;
+  }
+
+  #hotels #card {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards {
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+  }
+
+  .caption {
+    position: absolute;
+    color: white;
+    top: 194px;
+    margin-left: 10px;
+  }
+  .caption-1 {
+    position: absolute;
+    color: white;
+    top: 194px;
+    margin-left: 10px;
+  }
+  
+}
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-.burger {
-  display: none;
-}
+  .burger {
+    display: none;
+  }
 
   nav {
     padding: 30px;
@@ -250,7 +347,7 @@ section h1 {
     margin-left: 40%;
     margin-top: 7px;
   }
-  
+
   ul li a {
     display: inline-block;
     padding: 10px 20px;
@@ -274,26 +371,23 @@ section h1 {
     left: 41%;
   }
 
-#container {
-  padding: 40px;
-}
-
-  #about #container .row{
-   display: grid;
-   grid-gap: 20px;
+  #container {
+    padding: 40px;
   }
-  #about #container .col{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   grid-gap: 5px;
+
+  #about #container .row {
+    display: grid;
+    grid-gap: 20px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  #about #container .col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .col img {
     width: 400px;
-  }
-
-  .img-left {
-    margin-left: 27%;
   }
 
   #hotels {
@@ -325,4 +419,70 @@ section h1 {
     margin-left: 10px;
   }
 }
-    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  .burger {
+    display: block;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  svg {
+    width: 15%;
+    margin-left: auto;
+  }
+
+  main h1 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+
+  main a {
+    position: absolute;
+    bottom: 300px;
+    left: 38%;
+  }
+
+  #card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-gap: 8px;
+  }
+
+  .cards {
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+  }
+
+  .caption {
+    position: absolute;
+    color: white;
+    top: 190px;
+    margin-left: 10px;
+  }
+  .caption-1 {
+    position: absolute;
+    color: white;
+    top: 190px;
+    margin-left: 10px;
+  }
+  .caption-2 {
+    position: absolute;
+    color: white;
+    top: 495px;
+    margin-left: 10px;
+  }
+}
