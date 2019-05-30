@@ -43,9 +43,9 @@ svg {
   display: none;
 }
 
-main h1,
+.greetings h1,
 h3 {
-  margin: 0;
+  margin: 20px !important;
   padding: 0;
 }
 
@@ -57,21 +57,24 @@ main {
     #ec008c
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fc6767, #ec008c);
-  padding: 80px 30px;
+  padding:20px;
   margin: -1px auto;
-  height: 45vh;
+  height: 70vh;
 }
 
-main h3 {
-  margin-top: 90px;
+.container {
+  position: relative;
 }
-
+.container .svg {
+  width: 100%;
+  height: 20vh;
+  margin: 30px 0;
+}
 .tour {
   text-decoration: none;
   display: inline-block;
   font-weight: 900;
-  margin-top: 30px;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border: 2px solid rgb(250, 246, 246);
   background-color: #fc6767;
   border-radius: 20px;
@@ -97,9 +100,10 @@ ul {
   margin: 0;
   height: auto;
   list-style-type: none;
-  background: #020202b4;
+  background: #020202ee;
   padding: 20px;
   color: #fff;
+  z-index: 1;
 }
 
 ul li a {
@@ -230,6 +234,11 @@ section h1 {
   color: white;
   border-radius: 5px;
 }
+footer {
+  background-color: rgb(14, 13, 13);
+  color: #f6f6f6;
+  padding: 10px;
+}
 
 /*
  * Media queries starts here
@@ -278,6 +287,24 @@ section h1 {
     left: 41%;
   }
 
+  main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container .greetings {
+    margin-top: 30px;
+  }
+  .greetings h1,h3 {
+    margin: 50px !important;
+  }
+  .container .svg {
+    width: 70%;
+    height: 50vh;
+    margin-left: 80px;
+    /* margin-bottom: 100px; */
+  }
+
   #container {
     padding: 40px;
   }
@@ -299,6 +326,7 @@ section h1 {
 
   #hotels {
     padding: 20px 40px;
+    height: 100vh;
   }
 
   #hotels #card {
@@ -316,13 +344,14 @@ section h1 {
   .caption {
     position: absolute;
     color: white;
-    top: 194px;
+    top: 124px;
     margin-left: 10px;
   }
+
   .caption-1 {
     position: absolute;
     color: white;
-    top: 194px;
+    top: 124px;
     margin-left: 10px;
   }
   
@@ -453,7 +482,10 @@ section h1 {
     bottom: 300px;
     left: 38%;
   }
-
+  main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   #card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
