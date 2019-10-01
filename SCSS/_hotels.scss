@@ -1,0 +1,122 @@
+#hotels {
+    text-align: center;
+    padding: 20px;
+
+    .heading {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    #cards-container {
+        .card {
+            height: 280px;
+            margin: 15px 0;
+            position: relative;
+            overflow-y: hidden;
+
+            img {
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .caption {
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                background: #fc6767;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@include md {
+    #hotels {
+        text-align: center;
+        padding: 20px;
+    
+        .heading {
+            h1 {
+                font-size: 3rem;
+
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    
+        #cards-container {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 20px;
+            margin-top: 20px;
+            .card {
+                height: 280px;
+                margin: 15px 0;
+                position: relative;
+                overflow-y: hidden;
+    
+                img {
+                    height: 100%;
+                    border-radius: 5px;
+                }
+    
+                .caption {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                    background: #fc6767;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+@include xl {
+    #hotels {
+        text-align: center;
+        padding: 20px;
+    
+        .heading {
+            h1 {
+                font-size: 2.5rem;
+
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    
+        #cards-container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 20px;
+            margin-top: 20px;
+            .card {
+                height: 280px;
+                margin: 15px 0;
+                position: relative;
+                overflow-y: hidden;
+    
+                img {
+                    height: 100%;
+                    border-radius: 5px;
+                }
+    
+                .caption {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 10px;
+                    background: #fc6767;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

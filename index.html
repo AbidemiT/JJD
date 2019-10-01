@@ -1,7 +1,7 @@
 <!-- 
   AUTHOR: Tiamiyu Sikiru Abidemi
   Project: A travel agency Website Using HTML5, CSS & JS.
-  Email Address: abidemis01@gmail.com
+  Email Address: tiamiyusikiruabidemi@gmail.com
 -->
 
 <!DOCTYPE html>
@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./SCSS/main.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,70 +20,43 @@
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>JJD - Johnny Just Drop Travel Agency</title>
+    <title>JJD | Johnny Just Drop Travel Agency</title>
   </head>
   <body>
     <!-- The Header Section  starts here -->
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="#"><i class="fas fa-plane"></i> JJD</a>
-        </div>
+    <nav>
+      <div class="logo">
+        <a href="#"><i class="fas fa-plane"></i> JJD</a>
+      </div>
 
-        <ul>
-          <li><a href="#about" class="active">Who We Are</a></li>
-          <li><a href="#hotels">Hotels</a></li>
-          <li><a href="#">Cinema</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sign In</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about" class="active">Who We Are</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#">Cinema</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
 
-        <svg
-          class="burger"
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="48"
-          height="48"
-          viewBox="0 0 192 192"
-          style=" fill:#000000;"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-            stroke="none"
-            stroke-width="1"
-            stroke-linecap="butt"
-            stroke-linejoin="miter"
-            stroke-miterlimit="10"
-            stroke-dasharray=""
-            stroke-dashoffset="0"
-            font-family="none"
-            font-weight="none"
-            font-size="none"
-            text-anchor="none"
-            style="mix-blend-mode: normal"
-          >
-            <path d="M0,192v-192h192v192z" fill="none"></path>
-            <g fill="#ffffff">
-              <path
-                d="M16,40v16h160v-16zM16,88v16h160v-16zM16,136v16h160v-16z"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </nav>
-    </header>
+      <div class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
     <!--Header section ends here -->
 
     <!-- The Main Section  starts here -->
-    <main>
-      <div class="container">
-       <div class="greetings">
+    <main id="landing">
+      <div class="greetings">
         <h1>Welcome to Nigeria, the Giant of Africa.</h1>
-        <h3>Are you ready to take a wonderful tour with us?</h3>
-       </div>
-       <img class="svg" src="./svg/undraw_traveling_t8y2.svg" alt="">
+        <p>Are you ready to take a wonderful tour with us?</p>
+      </div>
+      <div class="img-container">
+        <img
+          class="svg landing-svg"
+          src="./svg/undraw_traveling_t8y2.svg"
+          alt=""
+        />
       </div>
       <a class="tour" href="#hotels"><i class="fas fa-car"></i> Take a Tour</a>
     </main>
@@ -90,29 +64,27 @@
 
     <!-- The About Section Starts here -->
     <section id="about">
-      <h1>About JJD</h1>
-      <div id="container">
-        <div class="row">
-          <div class="col">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              aperiam magnam fugit quidem mollitia commodi, facilis quos
-              veritatis magni ut numquam dolorem, omnis saepe sed vitae impedit
-              eveniet cumque dolor sint quaerat quae. Molestiae iusto corporis
-              praesentium explicabo fuga sed incidunt perferendis eaque. Hic sed
-              quaerat omnis dignissimos veritatis eos?
-            </p>
-            <img class="img-left" src="./images/man.jpg" alt="A man Image" />
-          </div>
-          <div class="col">
-            <img src="./images/lady.jpg" alt="A lady Image" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              praesentium nam eos ducimus, possimus dolor laborum aliquam
-              soluta, quibusdam dignissimos cumque? Neque debitis temporibus
-              quaerat, nam repellendus obcaecati ex porro.
-            </p>
-          </div>
+      <div class="heading">
+        <h1>ABOUT JJD</h1>
+      </div>
+      <div class="container">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aperiam
+            magnam fugit quidem mollitia commodi, facilis quos veritatis magni
+            ut numquam dolorem, omnis saepe sed vitae impedit eveniet cumque
+            dolor sint quaerat quae.
+          </p>
+          <img class="img-left" src="./images/man.jpg" alt="A man Image" />
+        </div>
+        <div class="col">
+          <img src="./images/lady.jpg" alt="A lady Image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium nam eos ducimus, possimus dolor laborum aliquam soluta,
+            quibusdam dignissimos cumque? Neque debitis temporibus quaerat, nam
+            repellendus obcaecati ex porro.
+          </p>
         </div>
       </div>
     </section>
@@ -120,10 +92,12 @@
 
     <!-- The Hotels Section Starts here -->
     <section id="hotels">
-      <h1>Top Stars Hotels</h1>
-      <p>A curated list of top ranking Hotels in Nigeria.</p>
-      <div id="card">
-        <div class="cards">
+      <div class="heading">
+        <h1>Top Stars Hotels</h1>
+        <p>A curated list of top ranking Hotels in Nigeria.</p>
+      </div>
+      <div id="cards-container">
+        <div class="card">
           <img
             src="./images/pexels-photo-2096983.jpeg"
             alt="Transcorp Hilton image"
@@ -133,22 +107,22 @@
             <p>Home Sweet Home</p>
           </div>
         </div>
-        <div class="cards">
+        <div class="card">
           <img
             src="./images/pexels-photo-944463.jpeg"
             alt="Premier Inn image"
           />
-          <div class="caption-1">
+          <div class="caption">
             <h3>Premier Inn</h3>
             <p>Comfort at it peak</p>
           </div>
         </div>
-        <div class="cards">
+        <div class="card">
           <img
             src="./images/pexels-photo-338504.jpeg"
             alt="Walan Hotel Image"
           />
-          <div class="caption-2">
+          <div class="caption">
             <h3>Walan Hotel</h3>
             <p>Home in Disguise</p>
           </div>

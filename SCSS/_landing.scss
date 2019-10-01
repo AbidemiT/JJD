@@ -1,0 +1,132 @@
+#landing {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .greetings {
+        h1 {
+            font-family: 'DINPro-Bold', sans-serif;
+        }
+        p {
+            margin: 20px 0;
+            font-family: 'DINPro-Light', sans-serif;
+        }
+    }
+
+    .img-container {
+        margin: 50px 0;
+        .landing-svg {
+            width: 60%;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    }
+
+    .tour {
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 10px 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+@include md {
+    #landing {
+        text-align: center;
+        padding: 40px 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+        .greetings {
+            h1 {
+                font-family: 'DINPro-Bold', sans-serif;
+                font-size: 3rem;
+            }
+            p {
+                margin: 20px 0;
+                font-family: 'DINPro-Light', sans-serif;
+                font-size: 1.5rem;
+            }
+        }
+    
+        .img-container {
+            margin: 50px 0;
+            .landing-svg {
+                width: 60%;
+                margin: 0 auto;
+                object-fit: contain;
+            }
+        }
+    
+        .tour {
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+    
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@include xl {
+    #landing {
+        text-align: center;
+        padding: 40px 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+        .greetings {
+            h1 {
+                font-family: 'DINPro-Bold', sans-serif;
+                font-size: 2.5rem;
+            }
+            p {
+                margin: 20px 0;
+                font-family: 'DINPro-Light', sans-serif;
+                font-size: 1.2rem;
+            }
+        }
+    
+        .img-container {
+            margin: 50px 0;
+            .landing-svg {
+                width: 30%;
+                margin: 0 auto;
+                object-fit: contain;
+            }
+        }
+    
+        .tour {
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            padding: 10px;
+            color: #fff;
+            width: 200px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+    
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+

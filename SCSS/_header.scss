@@ -1,0 +1,143 @@
+nav {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .logo {
+        a {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+
+    ul {
+        display: none;
+    }
+
+    .menu {
+        cursor: pointer;
+
+        .line{
+            background: #fff;
+            height: 4px;
+            width: 40px;
+            margin: 8px;
+        } 
+    }
+}
+
+
+@include md {
+    nav {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    
+        .logo {
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    margin-left: 10px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    
+        .menu {
+            display: none;
+            cursor: pointer;
+    
+            .line{
+                background: #fff;
+                height: 4px;
+                width: 40px;
+                margin: 8px;
+            } 
+        }
+    } 
+}
+@include ipad {
+    nav {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    
+        .logo {
+            a {
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    margin-left: 20px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    
+        .menu {
+            display: none;
+            cursor: pointer;
+    
+            .line{
+                background: #fff;
+                height: 4px;
+                width: 40px;
+                margin: 8px;
+            } 
+        }
+    } 
+}
+@include xl {
+    nav {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    
+        .logo {
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    margin-left: 20px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    
+        .menu {
+            display: none; 
+        }
+    } 
+}
