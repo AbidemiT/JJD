@@ -17,3 +17,7 @@
 @mixin xl {
     @media(min-width: 1200px) {@content;}
 }
+
+@mixin transit {
+    transition: all .3s ease-in;
+}

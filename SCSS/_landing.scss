@@ -29,9 +29,13 @@
         border-radius: 30px;
         padding: 10px 20px;
         color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 300px;
+        margin: 0 auto;
+
+        &:hover {
+            background: #fc6767;
+            @include transit;
+        }
 
         i {
             margin-right: 10px;

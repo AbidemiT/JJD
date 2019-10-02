@@ -31,6 +31,8 @@ nav .sidebar {
   top: 0;
   overflow: hidden;
   padding: 20px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 nav .sidebar li:first-child {
@@ -47,6 +49,11 @@ nav .sidebar li a {
   padding: 20px;
   text-transform: uppercase;
   font-family: 'DINPro-Medium', sans-serif;
+}
+
+nav .sidebar li a:hover {
+  background: #fc6767;
+  padding: 15px;
 }
 
 nav .menu {
@@ -66,7 +73,6 @@ nav .menu .line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow-x: hidden;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -87,9 +93,24 @@ nav .menu .line {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  nav ul li {
+    list-style-type: none;
+  }
   nav ul li a {
-    margin-left: 10px;
-    font-size: 1.2rem;
+    margin: 5px 0;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover {
+    background: #fc6767;
+    border-radius: 30px;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+  }
+  nav .web {
+    display: none;
   }
   nav .menu {
     display: none;
@@ -173,7 +194,7 @@ nav .menu .line {
   }
   nav ul li a {
     margin-left: 20px;
-    font-size: 1.2rem;
+    font-size: .8rem;
   }
   nav .menu {
     display: none;
@@ -331,15 +352,14 @@ nav .menu .line {
   border-radius: 30px;
   padding: 10px 20px;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#landing .tour:hover {
+  background: #fc6767;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 #landing .tour i {
@@ -452,6 +472,8 @@ nav .menu .line {
 #hotels #cards-container .card img {
   height: 100%;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #hotels #cards-container .card .caption {

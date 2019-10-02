@@ -27,6 +27,8 @@ nav {
         overflow: hidden;
         padding: 20px;
 
+        @include transit;
+
         li {
             &:first-child {
                 text-align: right;
@@ -42,6 +44,11 @@ nav {
                 padding: 20px;
                 text-transform: uppercase;
                 font-family: 'DINPro-Medium', sans-serif;
+
+                &:hover {
+                    background: #fc6767;
+                    padding: 15px;
+                }
             }
         }
     }
@@ -63,7 +70,6 @@ nav {
 @include md {
     nav {
         display: flex;
-        overflow-x: hidden;
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
@@ -80,11 +86,25 @@ nav {
             justify-content: space-between;
 
             li {
+                list-style-type: none;
                 a {
-                    margin-left: 10px;
-                    font-size: 1.2rem;
+                    margin: 5px 0;
+                    font-size: 1rem;
+                    display: block;
+                    padding: 10px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background: #fc6767;
+                        border-radius: 30px;
+                        @include transit;
+                    }
                 }
             }
+        }
+
+        .web {
+            display: none;
         }
     
         .menu {
@@ -162,7 +182,7 @@ nav {
             li {
                 a {
                     margin-left: 20px;
-                    font-size: 1.2rem;
+                    font-size: .8rem;
                 }
             }
         }

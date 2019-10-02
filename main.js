@@ -1,7 +1,7 @@
 // Menu functionality
 
 (() => {
-    let menu = document.querySelector("ul");  
+    let menu = document.querySelector(".web");  
     let burger = document.querySelector(".menu");
     let anc = document.querySelectorAll(".link");
     let link = [...anc]    
@@ -12,17 +12,19 @@
         li.innerHTML = "X";
         menu.prepend(li);
         menu.style.display = "block";
-        menu.classList.toggle("sidebar");
+        menu.classList.add("sidebar");
         e.preventDefault();
     })
 
     li.addEventListener("click", (e) => {
         menu.style.display = "none";
-        menu.classList.toggle("sidebar");
+        menu.classList.remove("sidebar");
     })
 
     link.forEach(a => {
         a.addEventListener('click', (e) => {
+            console.log(a)
+            
             menu.style.display = "none";
             menu.classList.remove("sidebar");
         })
