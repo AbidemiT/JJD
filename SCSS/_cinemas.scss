@@ -1,4 +1,5 @@
-#hotels {
+#cinemas {
+    background: #fc6767;
     text-align: center;
     padding: 20px;
 
@@ -34,7 +35,7 @@
 }
 
 @include md {
-    #hotels {
+    #cinemas {
         text-align: center;
         padding: 20px;
     
@@ -78,7 +79,7 @@
     }
 }
 @include xl {
-    #hotels {
+    #cinemas {
         text-align: center;
         padding: 20px;
     

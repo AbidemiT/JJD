@@ -22,8 +22,8 @@ nav {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
         overflow: hidden;
         padding: 20px;
 
@@ -56,13 +56,13 @@ nav {
     .menu {
         cursor: pointer;
 
-        .line{
+        .line {
             background: #fff;
             height: 4px;
             width: 40px;
             margin: 8px;
             border-radius: 8px;
-        } 
+        }
     }
 }
 
@@ -73,20 +73,21 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
-    
+
         .logo {
             a {
                 color: #fff;
                 font-size: 1.5rem;
             }
         }
-    
+
         ul {
             display: flex;
             justify-content: space-between;
 
             li {
                 list-style-type: none;
+
                 a {
                     margin: 5px 0;
                     font-size: 1rem;
@@ -106,20 +107,21 @@ nav {
         .web {
             display: none;
         }
-    
+
         .menu {
             display: none;
             cursor: pointer;
-    
-            .line{
+
+            .line {
                 background: #fff;
                 height: 4px;
                 width: 40px;
                 margin: 8px;
-            } 
+            }
         }
-    } 
+    }
 }
+
 @include ipad {
     nav {
         display: flex;
@@ -127,14 +129,14 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
-    
+
         .logo {
             a {
                 color: #fff;
                 font-size: 2rem;
             }
         }
-    
+
         ul {
             display: flex;
             justify-content: space-between;
@@ -146,20 +148,21 @@ nav {
                 }
             }
         }
-    
+
         .menu {
             display: none;
             cursor: pointer;
-    
-            .line{
+
+            .line {
                 background: #fff;
                 height: 4px;
                 width: 40px;
                 margin: 8px;
-            } 
+            }
         }
-    } 
+    }
 }
+
 @include xl {
     nav {
         display: flex;
@@ -167,14 +170,14 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
-    
+
         .logo {
             a {
                 color: #fff;
                 font-size: 1.5rem;
             }
         }
-    
+
         ul {
             display: flex;
             justify-content: space-between;
@@ -186,9 +189,9 @@ nav {
                 }
             }
         }
-    
+
         .menu {
-            display: none; 
+            display: none;
         }
-    } 
+    }
 }
